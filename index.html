@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>WebApp</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="fonts/style.css">
+</head>
+<body>
+	<header>
+	  <div class="layout-wrap">
+	    <a href="#">
+	    	<img src="img/logo-netcraft.svg" alt="netcraft">
+    	</a>
+	    <form class="search-box" method="get" action="http://www.google.com">
+	        <input type="search" name="q" placeholder="search">
+	    </form>
+	  </div>
+	</header>
+
+	<div class="page-body layout-wrap">
+	    <div class="notifications">
+	    </div>
+	    <nav>
+	        <div class="nav-section reporting-platform">
+	            <div class="menu">
+	                <div class="menu-hint">
+	                </div>
+	                <ul class="action-list">
+	                </ul>
+	            </div>
+	        </div>
+
+	        <div class="nav-section select-dashboard">
+	            <div class="menu">
+	                <div class="menu-hint">
+	                </div>
+	                <ul class="action-list">
+	                </ul>
+	            </div>
+	        </div>
+
+	        <div class="nav-section help-tutorials">
+	            <div class="menu">
+	                <div class="menu-hint">
+	                </div>
+	                <ul class="action-list">
+	                </ul>
+	            </div>
+	        </div>
+	    </nav>
+
+	    <div class="tabs">
+	        <ul id="tabs-list">
+	            <li><a class="active" rel="quick-reports">
+	            <i class="icon-external-link"></i>
+	            Quick Reports</a>
+	            </li>
+	            <li><a class="" rel="my-folders">
+	           	<i class="icon-star-o"></i>
+	            My Folders</a>
+	            </li>
+	            <li><a class="" rel="my-team-folders">
+	            <i class="icon-folder-open-o"></i>
+	            My Team Folders</a>
+	            </li>
+	            <li><a class="" rel="public-folders">
+	            <i class="icon-copy"></i>
+	            Public Folders</a>
+	            </li>
+	        </ul>
+	        <div id="quick-reports" class="tab-content">
+		        <select class="report-names-ddl" id="report-names"></select>
+		        <div class="quick-reports-buttons">
+		        	<a href="" target="_blank" class="expand q-r-btn"></a>
+		        	<button class="settings q-r-btn"></button>
+		        </div>
+		        <div class="quick-reports-form">
+		        	<form class="frmSettings" id="quickreports" runat="server">
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 01</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport1">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport1" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport1">URL</label>
+                                <input class="report-input url-input" placeholder="Site Url" id="urlReport1" type="url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 02</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport2">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport2" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport2">URL</label>
+                                <input class="report-input url-input" placeholder="Site Url" id="urlReport2" type="url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 03</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport3">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport3" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport3">URL</label>
+                                <input type="url" class="report-input url-input" id="urlReport3" placeholder="Site Url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <div class="f-footer">
+                            <a href="#" id="quick-reports-cancel">Cancel</a>
+                            <input id="submit" value="Save" type="submit">
+                        </div>
+                        
+                    </form>
+		        </div>
+	        </div>
+
+	        <div id="my-folders" class="tab-content hidden">
+	        </div>
+
+	        <div id="my-team-folders" class="tab-content hidden">
+	        <select class="report-names-ddl" id="report-names"></select>
+		        <div class="quick-reports-buttons">
+		        	<a href="" target="_blank" class="expand q-r-btn"></a>
+		        	<button class="settings q-r-btn"></button>
+		        </div>
+		        <div class="quick-reports-form">
+		        	<form class="frmSettings" id="quickreports" runat="server">
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 01</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport1">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport1" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport1">URL</label>
+                                <input class="report-input url-input" placeholder="Site Url" id="urlReport1" type="url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 02</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport2">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport2" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport2">URL</label>
+                                <input class="report-input url-input" placeholder="Site Url" id="urlReport2" type="url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="report-row">
+                            <span class="report-number">Reprot 03</span>
+                            <div class="input-feild report-name">
+                                <label class="report-label" for="nameReport3">Name</label>
+                                <input class="report-input" placeholder="Site Name" id="nameReport3" type="text">
+                            </div>
+                            <div class="input-feild report-url">
+                                <label class="report-label" for="urlReport3">URL</label>
+                                <input type="url" class="report-input url-input" id="urlReport3" placeholder="Site Url" pattern="https?://.+">
+                            </div>
+                        </fieldset>
+
+                        <div class="f-footer">
+                            <a href="#" id="quick-reports-cancel">Cancel</a>
+                            <input id="submit" value="Save" type="submit">
+                        </div>
+                        
+                    </form>
+		        </div>
+	        </div>
+
+	        <div id="public-folders" class="tab-content hidden">
+	        </div>
+	    </div>
+	</div>
+
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
